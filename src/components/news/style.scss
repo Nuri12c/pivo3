@@ -1,0 +1,147 @@
+
+@import "../../styles/variables";
+
+.form__line {
+  width: 100%;
+  background-color: $color-form-line;
+  padding: 30px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__heading {
+    color: $text-color-white;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  &__p {
+    color: $text-color-white;
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
+    font-size: 13px;
+  }
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.form__input {
+  width: 160px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  margin-right: 20px;
+  background-color: rgb(134, 104, 76);
+}
+.form__input::placeholder {
+  color: #ffffff;
+}
+
+.form__submit-button {
+  width: 80px;
+  font-size: 12px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  background-color: #5c5c5c;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__submit-button:hover {
+  background-color: #424242;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .forus__right-container * {
+    display: none;
+  }
+  .forus__left-container .forus__right-item {
+    display: block;
+    width: $width-mobile;
+  }
+  .forus__left-container {
+    margin: 0;
+  }
+  .forus__right-container {
+    display: none;
+  }
+  .beer__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .beer__item {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    
+    .form__text, .form__actions {
+        width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        margin-bottom: 10px;
+    }
+    
+    
+    .form form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .form__input {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .beer {
+  background-color: $beer-background-color;
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    width: 300px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+
+    &:hover {
+      transform: $item-hover-transform-scale;
+      background-color: #442e2e;
+    }
+  }
+
+
+  &__content {
+    max-width: 300px;
+    padding: 5px;
+    height: 175px;
+    color: $text-color-white;
+  }
+}
+}

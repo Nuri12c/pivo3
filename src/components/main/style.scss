@@ -1,0 +1,294 @@
+@import "../../styles/variables";
+$bg-img-path: "../../assets/img/";
+
+
+
+.hero {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 1 25%;
+    transition: 0.2s;
+    
+    &:hover {
+      transform: $item-hover-transform-scale;
+    }
+  }
+
+  figcaption {
+    text-align: center;
+  }
+}
+
+.forus {
+  margin-bottom: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right-container {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-container {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    color: $color-dark;
+
+    & .forus__right-item {
+      display: none;
+    }
+  }
+
+  &__left-item,
+  &__right-item {
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    margin-bottom: 15px;
+    flex: none;
+  }
+
+  &__right-item {
+    width: 47%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    &.first {
+      background: url(#{$bg-img-path}first-img.webp) no-repeat center left /
+        cover;
+    }
+    &.second {
+      background: url(#{$bg-img-path}second-img.webp) no-repeat center left /
+        cover;
+    }
+    &.third {
+      background: url(#{$bg-img-path}third-img.webp) no-repeat center left /
+        cover;
+    }
+    &.four {
+      background: url(#{$bg-img-path}four-img.webp) no-repeat center left /
+        cover;
+    }
+  }
+
+  &__right-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__right-btn {
+    margin-top: 50px;
+  }
+}
+
+.beer {
+  background-color: $beer-background-color;
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    width: 321px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+    height: 700px;
+
+    &:hover {
+      transform: $item-hover-transform-scale;
+      background-color: #442e2e;
+    }
+  }
+
+  &__img-dark,
+  &__img-gold,
+  &__img-red {
+    height: 321px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    max-width: 321px;
+    padding: 5px;
+    height: 175px;
+    color: $text-color-white;
+  }
+}
+
+.form__line {
+  width: 100%;
+  background-color: $form-line-color;
+  padding: 30px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__heading {
+    color: $text-color-white;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  &__p {
+    color: $text-color-white;
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
+    font-size: 13px;
+  }
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.form__input {
+  width: 160px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  margin-right: 20px;
+  background-color: rgb(134, 104, 76);
+}
+.form__input::placeholder {
+  color: #ffffff;
+}
+
+.form__submit-button {
+  width: 80px;
+  font-size: 12px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  background-color: #5c5c5c;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__submit-button:hover {
+  background-color: #424242;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .forus__right-container * {
+    display: none;
+  }
+  .forus__left-container .forus__right-item {
+    display: block;
+    width: $width-mobile;
+  }
+  .forus__left-container {
+    margin: 0;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .forus__right-container {
+    display: none;
+  }
+  .beer__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .beer__item {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    
+    .form__text, .form__actions {
+        width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        margin-bottom: 10px;
+    }
+    
+    
+    .form form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .form__input {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .beer {
+  background-color: $beer-background-color;
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    width: 300px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+
+    &:hover {
+      transform: $item-hover-transform-scale;
+      background-color: #442e2e;
+    }
+  }
+
+
+  &__content {
+    max-width: 300px;
+    padding: 5px;
+    height: 175px;
+    color: $text-color-white;
+  }
+}
+
+}

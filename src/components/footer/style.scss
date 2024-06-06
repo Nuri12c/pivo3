@@ -1,0 +1,131 @@
+@import '../../styles/variables';
+
+
+$color-text-aliceblue: aliceblue;
+$color-footer-border: #838383;
+$color-footer-top-border: #f2f2f2;
+$footer-height: 500px;
+
+$footer-img-width-small: 80px;
+$footer-img-height-small: 90px;
+$footer-item-flex-large: 1 1 30%;
+$footer-item-flex-small: 1 1 95%;
+
+.footer {
+  width: 100%;
+  height: $footer-height;
+  background: url(../../assets/img/footerimg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:left top;
+  color: $color-text-aliceblue;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: $footer-height;
+  }
+
+  &__item {
+    flex: $footer-item-flex-large;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  &__item2 {
+    flex: $footer-item-flex-large;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    .footer__item-container {
+        border-bottom: 1px solid $color-footer-border;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+
+  &__item3 {
+    flex: $footer-item-flex-large;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+
+  &__item-heading {
+    margin-bottom: 30px;
+  }
+
+  &__item-container  {
+    margin-bottom: 20px;
+  }
+
+  &__bottom-text {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+    border-top: 1px solid $color-footer-top-border;
+  }
+
+  &__img {
+    width: 100px;
+    height: 110px;
+  }
+
+  .icons__img {
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 768px) and (min-width: 320px) {
+    padding-top: 20px;
+    min-height: 900px;
+
+    &__list{
+      justify-content: center;
+    }
+
+    &__img {
+      width: $footer-img-width-small;
+      height: $footer-img-height-small;
+    }
+
+    &__item-container {
+      font-size: 15px;
+    }
+
+    &__item, &__item2, &__item3 {
+      flex: $footer-item-flex-small;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &__item3 {
+      justify-content: center;
+      align-self: center;
+      padding-top: 0;
+      padding-right: 0;
+    }
+
+    &__img {
+      width: 100px;
+      height: 110px;
+    }
+  }
+}

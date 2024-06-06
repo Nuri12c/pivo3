@@ -1,0 +1,159 @@
+@import '../../styles/variables.scss';
+
+
+.header {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  transition: 0.5s ease;
+  background-repeat: no-repeat;
+  color: #e3efe8;
+
+  
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(52, 7, 7, 0), rgb(52, 7, 7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+
+  &__bg-1 {
+    background: url(../../assets/img/header-first.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__bg-2 {
+    background: url(../../assets/img/header-second.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__bg-3 {
+    background: url(../../assets/img/header-third.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+
+}
+
+.logo {
+  align-self: center;
+}
+
+.header__navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-self: center;
+}
+
+.nav__item {
+  margin-right: 60px;
+  font-size: 18px;
+  color: $text-color-white;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+}
+
+.circle__item {
+  width: 15px;
+  height: 15px;
+  background-color: $text-color-white;
+  border-radius: 50%;
+  opacity: 40%;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  &-active {
+    opacity: 100%;
+  }
+}
+
+.slider,
+.slider2,
+.slider3 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  animation: buttonmagik 0.5s;
+
+  .slider-h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+  
+  .header__btn {
+    margin-bottom: 30px;
+  }
+}
+
+.slider2 {
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes buttonmagik {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.none {
+  display: none;
+}
+
+.btn2 {
+  width: 500px;
+  height: 100px;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .slider-h1 {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .btn2 {
+    width: 80%;
+    height: 100px;
+  }
+}
