@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
 import "./style.scss";
 import logo from "../../assets/img/logo.png";
-import { useEffect, useState } from "react";
 
 export const Header = () => {
   const [activeTab, setActiveTab] = useState("first");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const tabs = ["first", "second", "third"];
 
   useEffect(() => {
@@ -15,34 +16,65 @@ export const Header = () => {
       });
     }, 5000);
 
-    return () => clearInterval(intervalId); // Очищаем интервал, когда компонент будет размонтирован
+    return () => clearInterval(intervalId);
   }, []);
 
   const handleTabClick = (newActiveTab: string) => {
     setActiveTab(newActiveTab);
   };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   
   return (
     <header className="header header__bg-1">
       <div className="container header__container">
+        <button
+          className={`burger ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span
+            className={
+              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+            }
+          ></span>
+          <span
+            className={
+              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+            }
+          ></span>
+          <span
+            className={
+              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+            }
+          ></span>
+        </button>
+
+        <ul className={`nav__list ${isMenuOpen ? "nav__list_active" : ""}`}>
+          <li className="nav__item">
+            <a href="#first" onClick={() => handleTabClick("first")}>
+              Tutututut
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#second" onClick={() => handleTabClick("second")}>
+              Clonmbia
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#third" onClick={() => handleTabClick("third")}>
+              Tortoise
+            </a>
+          </li>
+          {/* Добавляйте дополнительные пункты меню здесь... */}
+        </ul>
         <div className="header__navbar">
           <div className="logo">
             <img src={logo} alt="" width="70" height="75" />
           </div>
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="">Tutututut</a>
-            </li>
-            <li className="nav__item">
-              <a href="">Clonmbia</a>
-            </li>
-            <li className="nav__item">
-              <a href="">Tortoise</a>
-            </li>
-            <li className="nav__item">
-              <a href="">Liberobeer</a>
-            </li>
-          </ul>
+
+          {/* Остальная часть вашего кода... */}
         </div>
         <div className="header__content">
           <div className={`slider ${activeTab === "first" ? "" : "none"}`}>
