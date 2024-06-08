@@ -41,7 +41,7 @@ export const Header = () => {
             <li className="nav__item">
               <a
                 href="#forus"
-                className={`burger ${isMenuOpen ? "active" : ""}`}
+                className={`link ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 О нас
@@ -50,7 +50,7 @@ export const Header = () => {
             <li className="nav__item">
               <a
                 href="#uslugi"
-                className={`burger ${isMenuOpen ? "active" : ""}`}
+                className={`link ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 Услуги
@@ -59,7 +59,7 @@ export const Header = () => {
             <li className="nav__item">
               <a
                 href="#proizvodstvo"
-                className={`burger ${isMenuOpen ? "active" : ""}`}
+                className={`link ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 Производство
@@ -68,7 +68,7 @@ export const Header = () => {
             <li className="nav__item">
               <a
                 href="#links"
-                className={`burger ${isMenuOpen ? "active" : ""}`}
+                className={`link ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 Контакты
