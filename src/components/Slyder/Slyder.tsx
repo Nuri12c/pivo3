@@ -40,7 +40,7 @@ export const Slyder = () => {
       ],
     };
     return (
-      <div className="Myslider">
+      <div id="uslugi" className="Myslider">
         <div className="App">
           <Slider {...settings}>
             {dataDigitalBestSeller.map((item) => (

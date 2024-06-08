@@ -6,10 +6,9 @@ export const Newsletter = () => {
         <div className="container line__container">
           <div className="form">
             <div className="form__text">
-              <h1 className="form__heading">NEWSLETTER</h1>
+              <h1 className="form__heading">НАШИ НОВОСТИ</h1>
               <p className="form__p">
-                Subscribe to our newsletter and receive special offers and
-                discounts
+               Подпишитесь на новостную ленту, получайте уведомления об акциях и выгодных предложениях
               </p>
             </div>
             <div className="form__actions">
@@ -19,10 +18,10 @@ export const Newsletter = () => {
                   name="email"
                   className="form__input"
                   id="email"
-                  placeholder="Your email address"
+                  placeholder="Ваша почта"
                   required
                 ></input>
-                <button className="form__submit-button">sign up</button>
+                <button className="form__submit-button">Отправить</button>
               </form>
             </div>
           </div>

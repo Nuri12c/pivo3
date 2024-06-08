@@ -5,23 +5,42 @@ import share from "../../assets/img/icons8-share.svg";
 import whatsapp from "../../assets/img/icons8-whatsapp.svg";
 import logo from "../../assets/img/logo.png";
 
+
 export const Footer = () => {
+   const scrollToTop = () => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+   };
+   const buttonStyle: React.CSSProperties = {
+     position: "sticky" as "sticky",
+     bottom: "20px",
+     display: "block",
+     padding: "10px 20px",
+     backgroundColor: "#4CAF50",
+     color: "white",
+     border: "none",
+     borderRadius: "5px",
+     cursor: "pointer",
+   };
+   
   return (
     <footer className="footer">
       <div className="container footer__container">
-        <ul className="footer__list">
+        <ul id="links" className="footer__list">
           <li className="footer__item">
-            <h2 className="footer__item-heading">OUR LOCATION</h2>
+            <h2 className="footer__item-heading">НАША ЛОКАЦИЯ</h2>
             <div className="footer__item-container">
-              <span className="footer__item-text">Russian Federation</span>
+              <span className="footer__item-text">Россия</span>
               <br />
               <span className="footer__item-text">
-                1422 1st St. Santa Rosa, CA 94559
+                ул. Профсоюзная д. 11 подъезд 12 кв. 3
               </span>
             </div>
             <div className="footer__item-container">
               <span className="footer__item-text">
-                Call for Reservations:{" "}
+                Наш номер телефона{" "}
                 <a href="tel:+ 1(800) 123-4567">+ 1(800) 123-4567</a>
               </span>
               <br />
@@ -45,34 +64,34 @@ export const Footer = () => {
             </div>
           </li>
           <li className="footer__item2">
-            <h2 className="footer__item-heading">TAPROOM HOURS</h2>
+            <h2 className="footer__item-heading">РАБОЧИЕ ЧАСЫ</h2>
             <div className="footer__item-container">
-              <span>Monday</span>
+              <span>Понедельник</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Tuesday</span>
+              <span>Вторник</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Wednesday</span>
+              <span>Среда</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Thursday</span>
+              <span>Четверг</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Friday</span>
+              <span>Пятница</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Saturday</span>
+              <span>Суббота</span>
               <span>1:00pm - 8:00pm</span>
             </div>
             <div className="footer__item-container">
-              <span>Sunday</span>
-              <span>Closed</span>
+              <span>Воскресенье</span>
+              <span>ЗАКРЫТО</span>
             </div>
           </li>
           <li className="footer__item3">
@@ -80,10 +99,9 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <div className="footer__bottom-text">
-          <p>Craft Beer & Brewery Template Kit by Jegtheme </p>
-          <p>Copyright © 2021. All Right Reserved.</p>
-        </div>
+        <button onClick={scrollToTop} style={buttonStyle}>
+          Вверх
+        </button>
       </div>
     </footer>
   );

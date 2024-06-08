@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <main className="main">
       <div className="container main__container">
-        <section className="hero">
+        <section id="proizvodstvo" className="hero">
           <ul className="hero__list">
             <li className="hero__item">
               <figure>
@@ -69,7 +69,7 @@ export const Main = () => {
             </li>
           </ul>
         </section>
-        <section className="forus">
+        <section id="forus" className="forus">
           <ul className="forus__container">
             <li className="forus__left-container">
               <div className="forus__left-item">
@@ -94,12 +94,14 @@ export const Main = () => {
               <div className="forus__right-item third"></div>
 
               <div className="forus__left-item">
-               Ржаной солод - применяют для приготовления хлебного вина, полугара и ржаного виски. Так же используется в для выпечки хлеба и других мучных изделий.
+                Ржаной солод - применяют для приготовления хлебного вина,
+                полугара и ржаного виски. Так же используется в для выпечки
+                хлеба и других мучных изделий.
               </div>
 
               <div className="forus__right-item four"></div>
 
-              <button className="forus__right-btn">Lorem, ipsum.</button>
+              <button className="header__btn">Сделать заказ</button>
             </li>
             <li className="forus__right-container">
               <div className="forus__right-item first"></div>

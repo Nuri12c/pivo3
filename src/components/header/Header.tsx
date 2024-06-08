@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import "./style.scss";
 import logo from "../../assets/img/logo.png";
-
+import instagram from "../../assets/img/icons8-instagram.svg";
+import telegram from "../../assets/img/icons8-telegram.svg";
+import share from "../../assets/img/icons8-share.svg";
+import whatsapp from "../../assets/img/icons8-whatsapp.svg";
 export const Header = () => {
   const [activeTab, setActiveTab] = useState("first");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +17,7 @@ export const Header = () => {
         const nextIndex = (currentIndex + 1) % tabs.length;
         return tabs[nextIndex];
       });
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -30,77 +33,122 @@ export const Header = () => {
   return (
     <header className="header header__bg-1">
       <div className="container header__container">
-        <button
-          className={`burger ${isMenuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span
-            className={
-              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
-            }
-          ></span>
-          <span
-            className={
-              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
-            }
-          ></span>
-          <span
-            className={
-              isMenuOpen ? "burger__line burger__line_active" : "burger__line"
-            }
-          ></span>
-        </button>
-
-        <ul className={`nav__list ${isMenuOpen ? "nav__list_active" : ""}`}>
-          <li className="nav__item">
-            <a href="#first" onClick={() => handleTabClick("first")}>
-              Tutututut
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#second" onClick={() => handleTabClick("second")}>
-              Clonmbia
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#third" onClick={() => handleTabClick("third")}>
-              Tortoise
-            </a>
-          </li>
-          {/* Добавляйте дополнительные пункты меню здесь... */}
-        </ul>
         <div className="header__navbar">
           <div className="logo">
             <img src={logo} alt="" width="70" height="75" />
           </div>
-
+          <ul className={`nav__list ${isMenuOpen ? "nav__list_active" : ""}`}>
+            <li className="nav__item">
+              <a
+                href="#forus"
+                className={`burger ${isMenuOpen ? "active" : ""}`}
+                onClick={toggleMenu}
+              >
+                О нас
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#uslugi"
+                className={`burger ${isMenuOpen ? "active" : ""}`}
+                onClick={toggleMenu}
+              >
+                Услуги
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#proizvodstvo"
+                className={`burger ${isMenuOpen ? "active" : ""}`}
+                onClick={toggleMenu}
+              >
+                Производство
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#links"
+                className={`burger ${isMenuOpen ? "active" : ""}`}
+                onClick={toggleMenu}
+              >
+                Контакты
+              </a>
+            </li>
+            <li className="nav__item ">
+              <div className="icons icons-header">
+                <a href="">
+                  <img className="icons__img" src={instagram} alt="instagram" />
+                </a>
+                <a href="">
+                  <img className="icons__img" src={telegram} alt="telegram" />
+                </a>
+                <a href="">
+                  <img className="icons__img" src={share} alt="share" />
+                </a>
+                <a href="">
+                  <img className="icons__img" src={whatsapp} alt="whatsapp" />
+                </a>
+              </div>
+            </li>
+            <li className="nav__item lincs-item">
+              <img className="footer__img" src={logo} alt="logo" />
+            </li>
+            {/* Добавляйте дополнительные пункты меню здесь... */}
+          </ul>
+          <button
+            className={`burger ${isMenuOpen ? "active" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span
+              className={
+                isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+              }
+            ></span>
+            <span
+              className={
+                isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+              }
+            ></span>
+            <span
+              className={
+                isMenuOpen ? "burger__line burger__line_active" : "burger__line"
+              }
+            ></span>
+          </button>
           {/* Остальная часть вашего кода... */}
         </div>
         <div className="header__content">
           <div className={`slider ${activeTab === "first" ? "" : "none"}`}>
-            <h1 className="slider-h1">Afathem yopby Ultt</h1>
+            <h1 className="slider-h1">
+              Первый магазин пивного производства в России
+            </h1>
             <p className="slider-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-              provident.
+              "Пиво пьем пьем пьем, все для пива продаем <br></br>
+              Кто продает ? мы продаем!"
             </p>
-            <p className="slider-p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
-              quaerat. <br />
-              Lorem ipsum dolor sit amet.
-            </p>
-            <button className="header__btn btn1">Lorem ipsum</button>
+            <button className="header__btn btn1">Заказать</button>
           </div>
 
           <div className={`slider2 ${activeTab === "second" ? "" : "none"}`}>
-            <button className="header__btn btn2">Lorem ipsum</button>
+            <h1 className="slider-h1">
+              Первый магазин пивного производства в России
+            </h1>
+            <p className="slider-p">
+              "Пиво пьем пьем пьем, все для пива продаем <br></br>
+              Кто продает ? мы продаем!"
+            </p>
+            <button className="header__btn btn1">Свяжитесь с нами</button>
           </div>
 
           <div className={`slider3 ${activeTab === "third" ? "" : "none"}`}>
             <h1 className="slider-h1">
-              Afathem yopby Ultt <br /> Lorem ipsum dolor
+              Первый магазин пивного производства в России
             </h1>
-            <p className="slider-p"></p>
-            <button className="header__btn btn3">Lorem ipsum 333</button>
+            <p className="slider-p">
+              "Пиво пьем пьем пьем, все для пива продаем <br></br>
+              Кто продает ? мы продаем!"
+            </p>
+            <button className="header__btn btn1">Сделать заказ</button>
           </div>
 
           <div className="circles">
