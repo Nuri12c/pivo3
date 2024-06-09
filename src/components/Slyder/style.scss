@@ -1,3 +1,47 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgb(187, 119, 80);;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 60%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-width: 100%; // Максимальная ширина изображения, может быть 100%, чтобы растянуться на ширину контейнера
+  max-height: 300px; // Максимальная высота изображения
+  display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
+  margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
+  object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
+}
+
+
+
+
+
+
 /* Стилизация нормального состояния точек */
 .slick-dots li button:before {
   color: #fff; /* Цвет точек */
