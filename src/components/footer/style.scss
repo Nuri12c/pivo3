@@ -93,6 +93,26 @@ $footer-item-flex-small: 1 1 95%;
     margin-right: 15px;
   }
 
+.scrollToTopButton {
+  width: 40px;
+  margin-left: auto;
+  position: sticky;
+  bottom: 20px;
+  display: block;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100; /* Убедитесь, что кнопка видима над другим содержимым */
+}
+
+.scrollToTopButton:hover {
+  background-color: #43a047; /* Немного темнее для эффекта при наведении */
+}
+
+  
   @media (max-width: 768px) and (min-width: 320px) {
     padding-top: 20px;
     min-height: 900px;

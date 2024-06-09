@@ -49,3 +49,35 @@ ul {
 h3 {
   margin: 0;
 }
+.global__btn {
+  align-self: center;
+  margin-top: 20px;
+    position: relative;
+    width: 10rem;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+  background-color: rgb(187, 119, 80);
+  border: none;
+  color: #e3efe8;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 3px rgb(157, 100, 67); /* Темно-голубой */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.global__btn {
+  transform: scale(1.05);
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.1);
+  background-position: right center;
+}
+
+.global__btn:active {
+  transform: scale(0.95);
+   transform: translateY(2px);
+  box-shadow: 0 1px rgb(103, 67, 46);;
+}
+.global__btn:hover {
+  background-color: rgb(175, 100, 57); /* Темно-голубой */
+}

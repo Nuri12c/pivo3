@@ -13,17 +13,8 @@ export const Footer = () => {
        behavior: "smooth",
      });
    };
-   const buttonStyle: React.CSSProperties = {
-     position: "sticky" as "sticky",
-     bottom: "20px",
-     display: "block",
-     padding: "10px 20px",
-     backgroundColor: "#4CAF50",
-     color: "white",
-     border: "none",
-     borderRadius: "5px",
-     cursor: "pointer",
-   };
+
+
    
   return (
     <footer className="footer">
@@ -99,8 +90,8 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <button onClick={scrollToTop} style={buttonStyle}>
-          Вверх
+        <button onClick={scrollToTop} className="scrollToTopButton">
+          &#8593;
         </button>
       </div>
     </footer>

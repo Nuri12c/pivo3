@@ -147,10 +147,11 @@
 .slider3 {
   display: flex;
   height: 100%;
+  
+  margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
   animation: buttonmagik 0.5s;
-  width: 100%;
   justify-content: center;
   align-items: center;
    background-color: rgba(128, 92, 92, 0.5);
@@ -160,53 +161,7 @@
   border-radius: 15px;
   margin-bottom: 10px;
 
-  
-  .header__btn {
-    position: relative;
-    width: 10rem;
-    margin-bottom: 30px;
-    padding: 10px 20px;
-  background-color: rgb(187, 119, 80);
-  border: none;
-  color: #e3efe8;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: none;
-  box-shadow: 0 3px rgb(157, 100, 67); /* Темно-голубой */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .header__btn:active {
-     transform: translateY(2px);
-  box-shadow: 0 1px rgb(103, 67, 46);;
-  }
-  .header__btn:hover {
-  background-color: rgb(175, 100, 57); /* Темно-голубой */
-}
-.header__btn:focus::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -5px; right: -5px; bottom: -5px; left: -5px;
-  border-radius: 6px;
-  pointer-events: none;
-  background-color: rgba(154, 121, 72, 0.5); /* Полупрозрачный голубой */
-  animation: button-focus 0.4s linear;
-}
-@keyframes button-focus {
-  0% {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }}
+
 }
 @keyframes buttonmagik {
   0% {
@@ -242,7 +197,7 @@
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .slider-h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .burger {
     display: block;
@@ -283,6 +238,7 @@
    background-color: rgba(128, 92, 92, 0);
    padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
 }
 .icons-header {
 

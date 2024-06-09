@@ -101,7 +101,7 @@ export const Main = () => {
 
               <div className="forus__right-item four"></div>
 
-              <button className="header__btn">Сделать заказ</button>
+              <button className="global__btn">Сделать заказ</button>
             </li>
             <li className="forus__right-container">
               <div className="forus__right-item first"></div>

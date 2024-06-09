@@ -6,7 +6,7 @@ export const Newsletter = () => {
         <div className="container line__container">
           <div className="form">
             <div className="form__text">
-              <h1 className="form__heading">НАШИ НОВОСТИ</h1>
+              <h1 className="form__heading">Наши новости</h1>
               <p className="form__p">
                Подпишитесь на новостную ленту, получайте уведомления об акциях и выгодных предложениях
               </p>
