@@ -6,6 +6,8 @@ import { Footer } from "./components/footer/Footer";
 import { Slyder } from "./components/Slyder/Slyder";
 import { Newsletter } from "./components/news/newsletter.tsx";
 function App() {
+   
+   
   return (
     <div className="body-main">
       <Header />
@@ -13,6 +15,7 @@ function App() {
       <Slyder />
       <Newsletter />
       <Footer />
+      
     </div>
   );
 }

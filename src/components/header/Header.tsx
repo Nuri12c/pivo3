@@ -121,7 +121,8 @@ export const Header = () => {
         <div className="header__content">
           <div className={`slider ${activeTab === "first" ? "" : "none"}`}>
             <h1 className="slider-h1">
-              Первый магазин пивного производства в России
+              Первый магазин пивного <br />
+              производства в России
             </h1>
             <p className="slider-p">
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
@@ -132,7 +133,8 @@ export const Header = () => {
 
           <div className={`slider2 ${activeTab === "second" ? "" : "none"}`}>
             <h1 className="slider-h1">
-              Первый магазин пивного <br />производства в России
+              Первый магазин пивного <br />
+              производства в России
             </h1>
             <p className="slider-p">
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
@@ -143,7 +145,8 @@ export const Header = () => {
 
           <div className={`slider3 ${activeTab === "third" ? "" : "none"}`}>
             <h1 className="slider-h1">
-              Первый магазин пивного производства в России
+              Первый магазин <br />
+              пивного производства в России
             </h1>
             <p className="slider-p">
               "Пиво пьем пьем пьем, все для пива продаем <br></br>

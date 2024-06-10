@@ -13,8 +13,6 @@ export const Footer = () => {
        behavior: "smooth",
      });
    };
-
-
    
   return (
     <footer className="footer">
@@ -89,7 +87,6 @@ export const Footer = () => {
             <img className="footer__img" src={logo} alt="logo" />
           </li>
         </ul>
-
         <button onClick={scrollToTop} className="scrollToTopButton">
           &#8593;
         </button>
