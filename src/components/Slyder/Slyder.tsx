@@ -15,14 +15,25 @@ export const Slyder = () => {
     title: string;
     price: string;
     category: string;
+    ingredients: { name: string; amount: string }[];
+    characteristics: { characteristic: string; value: string }[];
   }
+  
 
   // Предполагаем, что состояние modalData принимает объект с полями isOpen и description
   const [modalData, setModalData] = useState<{
     isOpen: boolean;
     description: string;
     imageSrc: string; // Добавляем поле для хранения пути к изображению
-  }>({ isOpen: false, description: "", imageSrc: "" });
+    ingredients: { name: string; amount: string }[];
+    characteristics: { characteristic: string; value: string }[];
+  }>({
+    isOpen: false,
+    description: "",
+    imageSrc: "",
+    ingredients: [],
+    characteristics: [],
+  });
 
   // Теперь при определении handleCardClick явно укажем тип параметра description
   const handleCardClick = (item: DataItem) => {
@@ -30,6 +41,8 @@ export const Slyder = () => {
       isOpen: true,
       description: item.description,
       imageSrc: item.src,
+      ingredients: item.ingredients,
+      characteristics: item.characteristics,
     });
   };
 
@@ -95,8 +108,16 @@ export const Slyder = () => {
         <Modal
           imageSrc={modalData.imageSrc}
           description={modalData.description}
+          ingredients={modalData.ingredients} // Добавьте это
+          characteristics={modalData.characteristics} // И это
           onClose={() =>
-            setModalData({ isOpen: false, description: "", imageSrc: "" })
+            setModalData({
+              isOpen: false,
+              description: "",
+              imageSrc: "",
+              ingredients: [], // Убедитесь, что очищаете эти поля
+              characteristics: [], // При закрытии модального окна
+            })
           }
         />
       )}

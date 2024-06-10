@@ -12,11 +12,11 @@
 }
 
 .modal-content {
-  background: rgb(187, 119, 80);;
+  display: flex;
+  background: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
   position: relative;
-  width: 60%;
 }
 
 .modal-close {
@@ -28,25 +28,65 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+.modal-image-container {
+  display: flex;
+  flex-direction: column;
+}
 .modal-image {
   max-width: 100%; // Максимальная ширина изображения, может быть 100%, чтобы растянуться на ширину контейнера
   max-height: 300px; // Максимальная высота изображения
   display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
-  margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
+  margin: 0 10px 0 10px; // Выравнивание по центру, если ширина меньше 100%
   object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
+  border-radius: 5px;
+}
+.modal-image-description {
+  margin: 0 auto;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+.modal-first-tablet-container {
+  margin: 10px auto 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.modal-second-tablet-container {
+  margin: 10px auto 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+.modal-tablet-h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  
 }
 
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+  
+}
 
-
-
-
-
+th {
+  background-color: #f2f2f2;
+}
 /* Стилизация нормального состояния точек */
 .slick-dots li button:before {
   color: #fff; /* Цвет точек */
   font-size: 16px; /* Устанавливаем желаемый размер точек */
-  
 }
 
 /* Стилизация активного состояния точки */
@@ -114,7 +154,7 @@
   text-align: center;
 }
 .category::before {
-  content: '';
+  content: "";
   background: rgb(255, 61, 61);
   position: absolute;
   top: calc(100% + 10px);
@@ -123,49 +163,99 @@
   height: 2px;
 }
 @media (max-width: 768px) and (min-width: 500px) {
-    .category {
-  font-size: 1rem;
-  
+  .modal-content {
+  display: flex;
+  flex-wrap: wrap;
 }
-.card-top h1 {
-   font-size: 1.5rem;
-}
-.card-top > img {
-  height: 200px;
-}
-.slick-dots {
-  display: none !important;
-}
-.card {
-  height: 450px;
-}
-  }
-  
-  
-  
-@media (max-width: 500px) and (min-width: 320px) {
-    .category {
-  font-size: 1rem;
-  
-}
-.card-top h1 {
-   font-size: 1.5rem;
-}
-.card-top > img {
-  height: 250px;
-}
-.slick-dots {
-  display: none !important;
-}
-.card {
-  height: 500px;
-}
-.App {
-  width: 80%;
+.modal-first-tablet-container {
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
-
+  .modal-image-container {
+    width: 100%;
+  }
+  .modal-image {
+  max-width: 100%; // Максимальная ширина изображения, может быть 100%, чтобы растянуться на ширину контейнера
+  max-height: 200px; // Максимальная высота изображения
+  display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
+  margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
+  object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
+}
+ th, td {
+    padding: 6px;
+  }
+  .category {
+    font-size: 1rem;
   }
 
+  .card-top h1 {
+    font-size: 1.5rem;
+  }
+  .card-top > img {
+    height: 200px;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .card {
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 320px) {
+  .modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.modal-first-tablet-container {
+  margin: 0 auto;
+}
+  .modal-image-container {
+    width: 100%;
+  }
+  .modal-image {
+  max-width: 100%; // Максимальная ширина изображения, может быть 100%, чтобы растянуться на ширину контейнера
+  max-height: 150px; // Максимальная высота изображения
+  display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
+  margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
+  object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
+}
+
+  h2 {
+    font-size: 18px; /* Уменьшаем размер заголовка */
+  }
+
+  p {
+    font-size: 14px; /* Уменьшаем основной текст */
+  }
+
+  th, td {
+    padding: 4px;
+    font-size: 12px; /* Уменьшаем текст в таблице */
+  }
+
+  table {
+    margin-top: 5px;
+  }
+  .category {
+    font-size: 1rem;
+  }
+  .card-top h1 {
+    font-size: 1.5rem;
+  }
+  .card-top > img {
+    height: 250px;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .card {
+    height: 500px;
+  }
+  .App {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
