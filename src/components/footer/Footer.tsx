@@ -4,16 +4,10 @@ import telegram from "../../assets/img/icons8-telegram.svg";
 import share from "../../assets/img/icons8-share.svg";
 import whatsapp from "../../assets/img/icons8-whatsapp.svg";
 import logo from "../../assets/img/logo.png";
-import arrow from "../../assets/img/arrow.svg";
 
 
 export const Footer = () => {
-   const scrollToTop = () => {
-     window.scrollTo({
-       top: 0,
-       behavior: "smooth",
-     });
-   };
+  
    
   return (
     <footer className="footer">
@@ -88,9 +82,7 @@ export const Footer = () => {
             <img className="footer__img" src={logo} alt="logo" />
           </li>
         </ul>
-        <button onClick={scrollToTop} className="scrollToTopButton">
-          <img className="arrow" src={arrow} alt="arrow" />
-        </button>
+       
       </div>
     </footer>
   );
