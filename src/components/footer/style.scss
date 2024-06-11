@@ -10,7 +10,9 @@ $footer-img-width-small: 80px;
 $footer-img-height-small: 90px;
 $footer-item-flex-large: 1 1 30%;
 $footer-item-flex-small: 1 1 95%;
-
+.arrow {
+  transform: translateY(2px);
+}
 .footer {
   width: 100%;
   height: $footer-height;

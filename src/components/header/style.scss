@@ -112,6 +112,7 @@
 .nav__list {
   display: flex;
   align-self: center;
+  font-weight: 300;
 }
 
 .nav__item {
@@ -155,12 +156,13 @@
   animation: buttonmagik 0.5s;
   justify-content: center;
   align-items: center;
-   background-color: rgba(128, 92, 92, 0.5);
+   background-color: rgba(128, 92, 92, 0.2);
   padding-top: 15px;
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 15px;
   margin-bottom: 10px;
+  
 
 
 }
@@ -185,6 +187,7 @@
 }
 .slider-h1 {
     font-size: 3rem;
+    font-weight: 300;
   }
 
 .icons-header {
