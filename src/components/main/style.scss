@@ -59,6 +59,9 @@ $bg-img-path: "../../assets/img/";
     flex-direction: column;
     margin-right: 40px;
     color: $color-dark;
+    .global__btn {
+      color: black;
+    }
      
   padding: 10px;
   border-radius: 15px;
@@ -191,6 +194,9 @@ $bg-img-path: "../../assets/img/";
       color: #e3efe8;
     }
     .forus__left-item {
+      color: #e3efe8;
+    }
+    .global__btn {
       color: #e3efe8;
     }
   }

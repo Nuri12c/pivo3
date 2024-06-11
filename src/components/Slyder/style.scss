@@ -17,6 +17,7 @@
   padding: 20px;
   border-radius: 5px;
   position: relative;
+  justify-content: center;
 }
 
 .modal-close {
@@ -27,6 +28,7 @@
   background: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #3c1414;
 }
 .modal-image-container {
   display: flex;
@@ -46,6 +48,7 @@
   align-self: center;
   align-content: center;
   justify-content: center;
+  font-size: 2rem;
 }
 .modal-first-tablet-container {
   margin: 10px auto 0;
@@ -166,7 +169,11 @@ th {
 @media (max-width: 768px) and (min-width: 500px) {
   .modal-content {
   display: flex;
-  flex-wrap: wrap;
+  height: 500px;
+  width: 90%;
+}
+.modal-tablet-container {
+  width: 100%;
 }
 .modal-first-tablet-container {
   margin: 0 auto;
@@ -176,7 +183,7 @@ th {
   }
   .modal-image {
   max-width: 100%; // Максимальная ширина изображения, может быть 100%, чтобы растянуться на ширину контейнера
-  max-height: 200px; // Максимальная высота изображения
+  max-height: 300px; // Максимальная высота изображения
   display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
   margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
   object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
@@ -220,6 +227,9 @@ th {
   display: block; // Изображения по умолчанию inline, что добавляет пробел снизу
   margin: 0 auto; // Выравнивание по центру, если ширина меньше 100%
   object-fit: contain; // Содержимое сохраняет свои пропорции, но заполняет размеры элемента
+}
+.modal-image-description {
+  font-size: 1.5rem;
 }
 
   h2 {

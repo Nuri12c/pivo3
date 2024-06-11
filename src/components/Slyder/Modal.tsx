@@ -42,31 +42,33 @@ const Modal: React.FC<ModalProps> = ({
           )}
           <p className="modal-image-description">{description}</p>
         </div>
-        <div className="modal-first-tablet-container">
-          <h2 className="modal-tablet-h2">Ингредиенты</h2>
-          <table>
-            <tbody>
-              {ingredients.map((ingredient, index) => (
-                <tr key={index}>
-                  <td>{ingredient.name}</td>
-                  <td>{ingredient.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="modal-second-tablet-container">
-          <h2 className="modal-tablet-h2">Характеристики</h2>
-          <table>
-            <tbody>
-              {characteristics.map((char, index) => (
-                <tr key={index}>
-                  <td>{char.characteristic}</td>
-                  <td>{char.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="modal-tablet-container">
+          <div className="modal-first-tablet-container">
+            <h2 className="modal-tablet-h2">Ингредиенты</h2>
+            <table>
+              <tbody>
+                {ingredients.map((ingredient, index) => (
+                  <tr key={index}>
+                    <td>{ingredient.name}</td>
+                    <td>{ingredient.amount}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="modal-second-tablet-container">
+            <h2 className="modal-tablet-h2">Характеристики</h2>
+            <table>
+              <tbody>
+                {characteristics.map((char, index) => (
+                  <tr key={index}>
+                    <td>{char.characteristic}</td>
+                    <td>{char.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

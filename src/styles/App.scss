@@ -74,8 +74,8 @@ h3 {
     width: 10rem;
     margin-bottom: 30px;
     padding: 10px 20px;
-  background-color: rgb(187, 119, 80);
-  border: none;
+  background-color: rgba(187, 119, 80, 0);
+  border: 3px solid rgb(187, 119, 80);
   color: #e3efe8;
   font-weight: semi-bold;
   cursor: pointer;
@@ -97,7 +97,7 @@ h3 {
   box-shadow: 0 1px rgb(103, 67, 46);;
 }
 .global__btn:hover {
-  background-color: rgb(175, 100, 57); /* Темно-голубой */
+  background-color: rgba(187, 119, 80, 0.1); /* Темно-голубой */
 }
 html {
   scroll-behavior: smooth;

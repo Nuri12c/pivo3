@@ -6,6 +6,7 @@
   margin-left: auto;
   height: 50%;
   align-self: center;
+  background-color: rgba(52, 7, 7, 0);
 }
 
 .burger__line {
@@ -13,7 +14,7 @@
   display: block;
   width: 30px; /* ширина линии */
   height: 3px; /* высота линии */
-  background-color: #333; /* цвет линии */
+  background-color: #ffffff; /* цвет линии */
   margin: 5px auto; /* отступы для разделения линий */
   transition: all 0.3s ease; /* анимация для плавного перехода */
 }
