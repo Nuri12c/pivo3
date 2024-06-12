@@ -69,14 +69,15 @@ h3 {
   margin: 0;
 }
 .global__btn {
+  position: relative;
+  z-index: 1;
   align-self: center;
   margin-top: 20px;
   font-weight: 400;
-    position: relative;
     width: 10rem;
     margin-bottom: 30px;
     padding: 10px 20px;
-  background-color: rgba(187, 119, 80, 0);
+  background-color: rgba(52, 7, 7, 0);
   border: 3px solid rgb(187, 119, 80);
   color: #e3efe8;
   font-weight: semi-bold;
@@ -101,6 +102,7 @@ h3 {
 .global__btn:hover {
   background-color: rgba(187, 119, 80, 0.1); /* Темно-голубой */
 }
+
 html {
   scroll-behavior: smooth;
 }

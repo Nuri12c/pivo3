@@ -82,26 +82,28 @@ export const Slyder = () => {
   };
 
   return (
-    <div id="uslugi" className="Myslider">
-      <div className="App">
-        <Slider {...settings}>
-          {dataDigitalBestSeller.map((item) => (
-            <div
-              key={item.id}
-              className="card"
-              onClick={() => handleCardClick(item)}
-            >
-              <div className="card-top">
-                <img src={item.src} alt={item.title} />
-                <h1>{item.title}</h1>
+    <div className="container slyder__container">
+      <div id="uslugi" className="Myslider">
+        <div className="App">
+          <Slider {...settings}>
+            {dataDigitalBestSeller.map((item) => (
+              <div
+                key={item.id}
+                className="card"
+                onClick={() => handleCardClick(item)}
+              >
+                <div className="card-top">
+                  <img src={item.src} alt={item.title} />
+                  <h1>{item.title}</h1>
+                </div>
+                <div className="card-bottom">
+                  <h3>{item.price}</h3>
+                  <span className="category">{item.category}</span>
+                </div>
               </div>
-              <div className="card-bottom">
-                <h3>{item.price}</h3>
-                <span className="category">{item.category}</span>
-              </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
 
       {modalData.isOpen && (

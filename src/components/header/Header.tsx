@@ -128,7 +128,8 @@ export const Header = () => {
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
               Кто продает ? мы продаем!"
             </p>
-            <button className="global__btn btn1">Заказать</button>
+            
+            <button className="global__btn btn2">Заказать</button>
           </div>
 
           <div className={`slider2 ${activeTab === "second" ? "" : "none"}`}>
@@ -140,7 +141,7 @@ export const Header = () => {
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
               Кто продает ? мы продаем!"
             </p>
-            <button className="global__btn btn1">Свяжитесь с нами</button>
+            <button className="global__btn btn2">Свяжитесь с нами</button>
           </div>
 
           <div className={`slider3 ${activeTab === "third" ? "" : "none"}`}>
@@ -152,7 +153,7 @@ export const Header = () => {
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
               Кто продает ? мы продаем!"
             </p>
-            <button className="global__btn btn1">Сделать заказ</button>
+            <button className="global__btn btn2">Сделать заказ</button>
           </div>
 
           <div className="circles">
