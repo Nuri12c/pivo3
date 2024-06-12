@@ -63,8 +63,8 @@ ul {
   max-width: $container-width;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 h3 {
   margin: 0;
@@ -116,4 +116,13 @@ body, .body-main {
 .footer {
   padding: 0;
   /* Остальные стили */
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 }
