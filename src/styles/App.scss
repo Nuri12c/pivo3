@@ -1,14 +1,15 @@
 @import './variables.scss';
 
 .scrollToTopButton {
-  width: 40px;
+  width: 35px;
+  height: 35px;
   margin-left: auto;
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: block;
-  padding: 10px;
-  background-color: #4CAF50;
+  
+  background-color: rgba(187, 119, 80, 0.6);
   color: white;
   border: none;
   border-radius: 5px;
@@ -80,7 +81,7 @@ h3 {
   background-color: rgba(52, 7, 7, 0);
   border: 3px solid rgb(187, 119, 80);
   color: #e3efe8;
-  font-weight: semi-bold;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 5px;
   outline: none;

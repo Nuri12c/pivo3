@@ -107,9 +107,29 @@ th {
 .slick-dots li.slick-active button:before {
   color: rgb(255, 255, 255); /* Цвет активной точки */
 }
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 22px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(52, 7, 7);
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+  left: -30px; /* Увеличивайте значение, чтобы сдвинуть стрелку дальше от левого края */
+  z-index: 1;
+}
+.slick-next {
+  right: -30px; /* Увеличивайте значение, чтобы сдвинуть стрелку дальше от правого края */
+  z-index: 1;
+}
 .slyder__container {
   padding-left: 0;
   padding-right: 0;
+  margin: 0 auto;
 }
 .Myslider {
   width: 100%;
@@ -117,11 +137,13 @@ th {
   display: flex;
   height: 100%;
 }
+
 .App {
   width: 90%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  
 }
 
 .slick-slide > div {
@@ -129,6 +151,8 @@ th {
 }
 .slick-list {
   margin: 0 -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card {
@@ -140,10 +164,15 @@ th {
   height: 650px;
   color: #fff;
   cursor: pointer;
+   transition: 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+  background: rgba(70, 10, 10, 0);
 }
 
 .card-top h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 20px;
   margin-left: 0;
   text-align: center;
@@ -170,6 +199,7 @@ th {
   position: relative;
   font-size: 1.3rem;
   text-align: center;
+  font-weight: 300;
 }
 .category::before {
   content: "";
@@ -224,6 +254,11 @@ th {
 }
 
 @media (max-width: 500px) and (min-width: 320px) {
+  .slick-list {
+  margin: 0 -10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
   .modal-content {
   display: flex;
   flex-wrap: wrap;
