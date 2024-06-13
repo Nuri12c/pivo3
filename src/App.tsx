@@ -6,7 +6,7 @@ import { Main } from "./components/main/Main";
 import { Footer } from "./components/footer/Footer";
 import { Slyder } from "./components/Slyder/Slyder";
 import { Newsletter } from "./components/news/newsletter.tsx";
-import arrow from "./assets/img/arrow.svg";
+import arrow from "./assets/img/arrow.png";
 
 
 
