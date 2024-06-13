@@ -193,6 +193,8 @@ th {
 
 .card-bottom {
   margin: 10px 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid red;
 }
 
 .category {
@@ -200,16 +202,9 @@ th {
   font-size: 1.3rem;
   text-align: center;
   font-weight: 300;
+  
 }
-.category::before {
-  content: "";
-  background: rgb(255, 61, 61);
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  right: 0;
-  height: 2px;
-}
+
 @media (max-width: 768px) and (min-width: 500px) {
   .modal-content {
   display: flex;
