@@ -1,7 +1,12 @@
 @import './variables.scss';
 .arrow {
   transform: translateY(2px);
+  display: inline;
   width: 20px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  
 }
 .scrollToTopButton {
   width: 35px;
