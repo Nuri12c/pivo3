@@ -197,8 +197,12 @@
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+     -webkit-appearance: none; /* Для Safari и старых версий Chrome */
+  -moz-appearance: none;    /* Для Firefox */
+  appearance: none;         /* Стандартное свойство */
   }
   
+
   /**
    * Remove the inner border and padding in Firefox.
    */
@@ -289,6 +293,9 @@
   
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
+    -webkit-appearance: none; /* для Chrome и Safari */
+  -moz-appearance: none;    /* для Firefox */
+  appearance: none;         /* стандартное свойство */
     outline-offset: -2px; /* 2 */
   }
   
