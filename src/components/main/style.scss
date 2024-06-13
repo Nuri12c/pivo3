@@ -47,7 +47,7 @@ figure {
 
 .forus {
   margin-bottom: 60px;
-
+  
   &__container {
     display: flex;
     justify-content: space-between;
@@ -85,6 +85,8 @@ figure {
     }
     margin-bottom: 15px;
     flex: none;
+    
+    
   }
 
   &__right-item {
@@ -92,6 +94,7 @@ figure {
     height: 200px;
     margin-right: 10px;
     border-radius: 5px;
+    
 
     &.first {
       background: url(#{$bg-img-path}first-img.webp) no-repeat center left /
@@ -184,16 +187,24 @@ figure {
 }
 
 @media (max-width: 768px) and (min-width: 320px) {
+  figure {
+  margin: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+}
   .forus__right-container * {
     display: none;
   }
   .forus__left-container .forus__right-item {
     display: block;
     width: $width-mobile;
+    
   }
   .forus__left-container {
     margin: 0;
     background-color: rgba(44, 27, 27);
+    padding-left: 20px;
+    padding-right: 20px;
     h1 {
       font-size: 2rem;
       text-align: center;
