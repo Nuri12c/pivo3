@@ -44,7 +44,6 @@ function App() {
       <Footer />
       {showButton && (
         <button onClick={scrollToTop} className="scrollToTopButton">
-         
           <img className="arrow" src={arrow} alt="arrow" />
         </button>
       )}
