@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 30px; // Можно настроить под ваш дизайн
+  background-color: #f2f2f2; // Цвет фона
+  display: flex;
+  align-items: center;
+}
+
+.marquee__content {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite; // Время анимации можно настроить
+
+  // SCSS переменные для цвета текста (подключение из variables.scss)
+  color: $color-dark; // Используйте переменную из вашего файла variables
+}
+
+// Определение анимации
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

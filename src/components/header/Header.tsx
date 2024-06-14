@@ -75,21 +75,19 @@ export const Header = () => {
                 Контакты
               </a>
             </li>
-            <li className="nav__item ">
-              <div className="icons icons-header">
-                <a href="">
-                  <img className="icons__img" src={instagram} alt="instagram" />
-                </a>
-                <a href="">
-                  <img className="icons__img" src={telegram} alt="telegram" />
-                </a>
-                <a href="">
-                  <img className="icons__img" src={share} alt="share" />
-                </a>
-                <a href="">
-                  <img className="icons__img" src={whatsapp} alt="whatsapp" />
-                </a>
-              </div>
+            <li className="icons icons-header">
+              <a href="">
+                <img className="icons__img" src={instagram} alt="instagram" />
+              </a>
+              <a href="">
+                <img className="icons__img" src={telegram} alt="telegram" />
+              </a>
+              <a href="">
+                <img className="icons__img" src={share} alt="share" />
+              </a>
+              <a href="">
+                <img className="icons__img" src={whatsapp} alt="whatsapp" />
+              </a>
             </li>
             <li className="nav__item lincs-item">
               <img className="footer__img" src={logo} alt="logo" />
@@ -128,7 +126,7 @@ export const Header = () => {
               "Пиво пьем пьем пьем, все для пива продаем <br></br>
               Кто продает ? мы продаем!"
             </p>
-            
+
             <button className="global__btn btn2">Заказать</button>
           </div>
 

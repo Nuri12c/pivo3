@@ -7,6 +7,7 @@ import { Footer } from "./components/footer/Footer";
 import { Slyder } from "./components/Slyder/Slyder";
 import { Newsletter } from "./components/news/newsletter.tsx";
 import arrow from "./assets/img/arrow.png";
+import { Running } from "./components/runningstring/Running.tsx";
 
 
 
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div className="body-main">
+      <Running/>
       <Header />
       <Main />
       <Slyder />
