@@ -62,7 +62,7 @@ export const dataDigitalBestSeller = [
   },
   {
     id: 3,
-    title: "AMERICAN PALE ALE",
+    title: "American pale ale",
     price: "",
     category:
       "Ароматный эль в американском стиле, пряный и терпкий, в аромате и вкусе преобладают цитрусовые и цветочные ноты.",

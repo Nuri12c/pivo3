@@ -28,7 +28,7 @@
 
 body {
   background-color: $bgcolor-light;
-  font-family: $font-primary;
+  font-family: "Vollkorn", serif;
 }
 
 
@@ -37,11 +37,17 @@ h1 {
   font-weight: 700;
   font-size: 47px;
   margin: 0;
+  font-family: "Lobster", sans-serif;
+}
+h2 {
+  font-family: "Lobster", sans-serif;
 }
 
 p {
   margin: 0;
   margin-bottom: 30px;
+  font-size: 1.5rem;
+   font-family: "Caveat", cursive;
 }
 
 

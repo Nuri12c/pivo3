@@ -7,9 +7,9 @@ export const Newsletter = () => {
           <div className="form">
             <div className="form__text">
               <h1 className="form__heading">Наши новости</h1>
-              <p className="form__p">
+              <div className="form__p">
                Подпишитесь на новостную ленту, получайте уведомления об акциях и выгодных предложениях
-              </p>
+              </div>
             </div>
             <div className="form__actions">
               <form action="">

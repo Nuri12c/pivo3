@@ -38,11 +38,11 @@ function App() {
 
   return (
     <div className="body-main">
-      <Running/>
       <Header />
       <Main />
       <Slyder />
       <Newsletter />
+      <Running />
       <Footer />
       {showButton && (
         <button onClick={scrollToTop} className="scrollToTopButton">
