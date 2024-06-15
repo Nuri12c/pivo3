@@ -81,7 +81,8 @@
   margin: 0 auto;
   text-align: center;
 }
-table {
+.Myslider {
+  table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -98,6 +99,8 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
+}
+
 /* Стилизация нормального состояния точек */
 .slick-dots li button:before {
   color: #fff; /* Цвет точек */
@@ -300,8 +303,8 @@ th {
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 5px;
 }
-
-  h2 {
+.Myslider {
+    h2 {
     font-size: 18px; /* Уменьшаем размер заголовка */
   }
 
@@ -332,6 +335,8 @@ th {
   .card {
     height: 500px;
   }
+}
+
   .App {
     width: 80%;
     margin: 0 auto;
